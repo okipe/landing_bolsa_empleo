@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* fonts*/
+@font-face {
+  font-family: "Gill Sans";
+  src: url("fonts/GillSans_regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("fonts/GillSans_bold.otf");
+  font-weight: bold;
+}
+/*Estilos Generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Usando variables*/
+body {
+  background-color: #3753aa;
+  font-family: "Gill Sans", sans-serif;
+  color: #fff;
+}
+
+/* Más estilos generales */
+body {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  overflow: auto;
+}
+body h1 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+}
+body h2 {
+  text-align: center;
+  font-size: 32px;
+}
+body p {
+  font-size: 20px;
+}
+body a {
+  font-size: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.logo-container img {
+  width: 125px;
+}
+
+.socialmedia img {
+  width: 30px;
+  margin: 5px;
+}
+
+/* Opciones Bolsa de Empleo */
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.servicios .stakeholder {
+  width: 45%;
+}
+.servicios .stakeholder .titulo-2 {
+  margin-bottom: 2rem;
+}
+.servicios .vacio {
+  width: 10%;
+  max-width: 75px;
+}
+.servicios .opcion-container {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.servicios .opcion-container a {
+  text-decoration: none;
+  color: #fff;
+}
+.servicios .opcion-container img {
+  width: 60px;
+  margin-right: 20px;
+}
+.servicios .opcion-container:hover {
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+}
+
+.quienes-somos {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+.quienes-somos .somos-texto {
+  width: 50%;
+  max-width: 400px;
+  /* margin-right: 50px; */
+}
+.quienes-somos .somos-texto h2 {
+  margin-bottom: 40px;
+  text-align: left;
+}
+.quienes-somos .somos-texto p {
+  margin-bottom: 30px;
+}
+.quienes-somos img {
+  width: 45%;
+  max-width: 500px;
+}
+
+.contacto {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.titulo-contacto {
+  width: 50%;
+}
+
+.medios-de-contacto {
+  width: 50%;
+  padding-left: 40px;
+}
+.medios-de-contacto a {
+  color: #fff;
+}
+
+.medio-contacto {
+  display: flex;
+  font-size: 22px;
+  flex-direction: row;
+  width: auto;
+  margin: 30px 0;
+  align-items: center;
+}
+.medio-contacto img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Media Queries */
+@media all and (max-width: 767px) {
+  body {
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    max-width: 700px;
+  }
+  body h1 {
+    font-size: 1.8rem;
+  }
+  body h2 {
+    font-size: 1.5rem;
+  }
+  body p {
+    font-size: 18px;
+  }
+  body a {
+    font-size: 18px;
+  }
+  body .encabezado {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  body .encabezado .logo-container {
+    max-width: 20%;
+  }
+  body .encabezado .logo-container img {
+    max-width: 100%;
+  }
+  body .encabezado .socialmedia {
+    max-width: 20%;
+  }
+  body .encabezado .socialmedia img {
+    max-width: 30%;
+  }
+
+  .servicios {
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+  }
+  .servicios .stakeholder {
+    margin: auto;
+    width: 70%;
+  }
+  .servicios h2 {
+    margin-block-start: 2em;
+    margin-block-end: -1.5em;
+  }
+
+  .quienes-somos {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .quienes-somos p {
+    width: 100%;
+    text-align: center;
+  }
+  .quienes-somos .somos-texto {
+    width: 80%;
+    max-width: 400px;
+  }
+  .quienes-somos .somos-texto h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .quienes-somos .somos-texto img {
+    max-width: 200px;
+  }
+  .quienes-somos .contacto {
+    flex-direction: column;
+    width: auto;
+  }
+  .quienes-somos .contacto .medios-de-contacto {
+    width: auto;
+  }
+  .quienes-somos .contacto .medios-de-contacto p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .contacto {
+    flex-direction: column;
+  }
+  .contacto .medios-de-contacto {
+    width: auto;
+    padding-left: 0px;
+    margin: 0 auto;
+  }
+  .contacto .medios-de-contacto .medio-contacto {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  body h1 {
+    font-size: 1.2rem;
+  }
+  body .quienes-somos {
+    max-width: 1000px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
