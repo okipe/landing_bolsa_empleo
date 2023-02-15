@@ -26,4 +26,4 @@ Versión mobile:
 
 ![Web en tamaño móvil](/img_md/mobile_version.png)
 
-El sitio web está disponible en Github Pages.
+El sitio web está [disponible en Github Pages](https://okipe.github.io/landing_bolsa_empleo/ui/).
