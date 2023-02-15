@@ -1,0 +1,120 @@
+// variables:
+$breakpoint-sm: 600px
+$breakpoint-md: 767px
+$breakpoint-lg: 1024px
+// $breakpoint:
+// sm: 600px
+// md: 800px
+// lg: 1024px
+
+@mixin media($media)
+    @if $media == sm
+        @media (max-width: $breakpoint-sm)
+            @content
+
+    @else if $media == md
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md)
+            @content
+
+    @else if $media == lg
+        @media (min-width: $breakpoint-md)
+            @content
+
+@media all and (max-width: $breakpoint-md)
+
+    body
+        padding: 10px
+        width: 100%
+        margin: 10px
+        max-width: 700px
+
+        h1
+            font-size: 1.8rem
+
+        h2
+            font-size: 1.5rem
+
+        p
+            font-size: 18px
+
+        a
+            font-size: 18px
+
+        .encabezado
+            justify-content: space-between
+            margin-bottom: 20px
+
+            .logo-container
+                max-width: 20%
+
+                img
+                    max-width: 100%
+
+            .socialmedia
+                max-width: 20%
+
+                img
+                    max-width: 30%
+
+    .servicios
+        flex-direction: column
+        width: 100%
+        max-width: 800px
+
+        .stakeholder
+            margin: auto
+            width: 70%
+
+        h2
+            margin-block-start: 2em
+            margin-block-end: -1.5em
+
+    .quienes-somos
+        flex-direction: column
+        width: 100%
+        justify-content: center
+
+        p
+            width: 100%
+            text-align: center
+
+        .somos-texto
+            width: 80%
+            max-width: 400px
+
+            h2
+                text-align: center
+                width: 100%
+
+            img
+                max-width: 200px
+
+        .contacto
+            flex-direction: column
+            width: auto
+
+            .medios-de-contacto
+                width: auto
+
+                p
+                    font-size: 10px
+                    text-align: center
+
+    .contacto
+        flex-direction: column
+
+        .medios-de-contacto
+            width: auto
+            padding-left: 0px
+            margin: 0 auto
+
+            .medio-contacto
+                justify-content: center
+
+@media (max-width: $breakpoint-sm)
+    body
+        h1
+            font-size: 1.2rem
+
+        .quienes-somos
+            max-width: 1000px

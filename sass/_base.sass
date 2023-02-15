@@ -1,0 +1,65 @@
+// En este archivo deberán ir todas tus reglas base:
+
+// Las reglas base pueden ser:
+// - resets
+// - variables
+// - mixins
+// - clases generales
+    
+// Paleta de colores
+$color-fondo: #3753aa
+$color-texto: #fff
+$color-enlace: #fff
+
+/* fonts*/
+@font-face
+    font-family: "Gill Sans"
+    src: url('fonts/GillSans_regular.otf')
+    font-weight: normal
+
+@font-face
+    font-family: "Gill Sans"
+    src: url('fonts/GillSans_bold.otf')
+    font-weight: bold
+
+$fuente-principal: "Gill Sans", sans-serif
+
+/*Estilos Generales*/
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+/*Usando variables*/
+
+body
+    background-color: $color-fondo
+    font-family: $fuente-principal
+    color: $color-texto
+
+/* Más estilos generales */
+
+body
+    width: 80%
+    max-width: 900px
+    margin: auto
+    overflow: auto
+
+    h1
+        font-weight: bolder
+        font-size: 2.5rem
+
+    h2 
+        // No aplica a quienes somos
+        text-align: center
+        font-size: 32px
+
+    p
+        font-size: 20px
+
+    a
+        font-size: 20px
